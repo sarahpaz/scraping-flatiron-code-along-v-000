@@ -4,7 +4,12 @@ class Course
   @@all = []
 
   def initialize(title:, schedule:, description:)
-
+    @title = title
+    @schedule = schedule
+    @description = description
   end
 
+  def self.all
+    @@all 
+  end
 end
